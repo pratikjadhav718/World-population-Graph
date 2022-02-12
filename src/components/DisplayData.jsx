@@ -3,7 +3,6 @@ import data from "./Data/test.json";
 import { GraphData } from './DisplayGraph';
 
 export const DisplayData = () => {
-    const [seconds, setSeconds] = useState(1);
     const [currYear, setCurrYear] = useState(1960);
     const [allData, setAllData] = useState(data.Data);
     const [datas, setDatas] = useState([]);
@@ -39,7 +38,7 @@ export const DisplayData = () => {
     });
     return (
         <div>
-            <h1>Number of seconds is {seconds} and year is {currYear}</h1>
+            <h1>Current year is {currYear}</h1>
 
             <GraphData arr={datas}/>
 
