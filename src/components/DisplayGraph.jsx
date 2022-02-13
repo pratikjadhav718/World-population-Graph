@@ -6,7 +6,7 @@ export const GraphData = ({ arr }) => {
     console.log(arr);
     return (
         <div>
-            <BarChart width={1300} height={300} data={arr}>
+            <BarChart width={1000} height={300} data={arr}>
                 <YAxis />
                 <XAxis dataKey="CountryName" stroke="#8884d8" />
                 <Tooltip wrapperStyle={{ width: 100, backgroundColor: '#ccc' }} />
